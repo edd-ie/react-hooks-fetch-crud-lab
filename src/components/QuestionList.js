@@ -18,7 +18,7 @@ function QuestionList() {
   const questions = originalContent.map(question => {
     return(
       <>
-        <QuestionItem question={question} key={question.id} content={originalContent} reset={setOriginalContent}/>
+        <QuestionItem question={question} key={`q${question.id}`} content={originalContent} reset={setOriginalContent}/>
       </>
     )
   })

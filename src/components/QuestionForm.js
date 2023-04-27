@@ -32,16 +32,16 @@ function QuestionForm(props) {
         body: JSON.stringify(data)
       })
 
-    event.target.reset()
-    setFormData({
-    prompt: "",
-    answer1: "",
-    answer2: "",
-    answer3: "",
-    answer4: "",
-    correctIndex: 0,
-  })
-  }
+      setFormData({
+        prompt: "",
+        answer1: "",
+        answer2: "",
+        answer3: "",
+        answer4: "",
+        correctIndex: 0,
+      })
+      // event.target.reset()
+    }
 
   return (
     <section>
